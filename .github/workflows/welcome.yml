@@ -4,10 +4,11 @@ on:
         inputs:
             name:
                 required: true
+                type: string
                 
 jobs:
     welcome:
-        run-on: self-hosted
+        runs-on: self-hosted
         steps:
         - name: welcome message
           run : echo "Hello" + ${{inputs.name}}
