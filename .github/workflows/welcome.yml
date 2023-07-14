@@ -1,0 +1,14 @@
+name: reuseable workflow
+on:
+    workflow-call:
+        inputs:
+            name:
+                required: true
+                
+jobs:
+    welcome:
+        run-on: self-hosted
+        steps:
+        - name: welcome message
+          run : echo "Hello" + ${{inputs.name}}
+            
