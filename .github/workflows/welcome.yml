@@ -1,6 +1,6 @@
 name: reuseable workflow
 on:
-    workflow-call:
+    workflow_call:
         inputs:
             name:
                 required: true
